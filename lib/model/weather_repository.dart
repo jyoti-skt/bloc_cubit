@@ -11,9 +11,9 @@ abstract class WeatherRepository {
 }
 
 class FakeWeatherRepository implements WeatherRepository {
+
+
   Future<Weather> fetchWeather(String cityName){
-
-
     return Future.delayed(Duration(seconds: 1),
         (){
       final random= Random();
